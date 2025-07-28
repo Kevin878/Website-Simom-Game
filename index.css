@@ -1,0 +1,82 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: darkblue;
+    place-items: center center; /*Set all child items center*/
+}
+
+.wrong {
+    background-color: red;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(249, 233, 205);
+    font-family: "Pixelify Sans", "Sans-serif";
+}
+
+.grid-container {
+    display: grid;
+    aspect-ratio: 1/1;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 500px) {
+    .grid-container {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+    .grid-container {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+    .grid-container {
+        width: 60vw;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1100px) {
+    .grid-container {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1100px) {
+    .grid-container {
+        width: 40vw;
+    }
+}
+
+.block {
+    border: 15px solid black;
+    border-radius: 10%;
+}
+
+.block-pressed {
+    border: 15px solid white;
+}
+
+#green {
+    background-color: green;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#blue {
+    background-color: blue;
+}
